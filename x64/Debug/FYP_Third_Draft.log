@@ -1,0 +1,187 @@
+﻿Build started 12/06/2013 11:27:30.
+     1>Project "H:\Visual Studio 2010\Projects\FYP_Draft_No_7\FYP_Third_Draft\FYP_Third_Draft.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\FYP_Third_Draft.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\matlab\R2012a\extern\include /I"H:\Visual Studio 2010\eigen" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Class_Sorting.cpp Data_Integration.cpp File_Processing.cpp Initialization.cpp Mapping.cpp Matlab_execution.cpp Qualify.cpp Text_Reading.cpp User_Profiling.cpp Voting_Algorithm.cpp kd_Tree.cpp main.cpp
+         Class_Sorting.cpp
+     1>Class_Sorting.cpp(60): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+         Compiling...
+         main.cpp
+         kd_Tree.cpp
+     1>kd_Tree.cpp(37): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>kd_Tree.cpp(46): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+     1>kd_Tree.cpp(78): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>kd_Tree.cpp(79): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>kd_Tree.cpp(81): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>kd_Tree.cpp(87): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(1253): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(1248) : while compiling class template member function 'nanoflann::KDTreeEigenMatrixAdaptor<MatrixType>::KDTreeEigenMatrixAdaptor(const int,const MatrixType &,const int)'
+                 with
+                 [
+                     MatrixType=Eigen::MatrixXf
+                 ]
+                 kd_Tree.cpp(58) : see reference to class template instantiation 'nanoflann::KDTreeEigenMatrixAdaptor<MatrixType>' being compiled
+                 with
+                 [
+                     MatrixType=Eigen::MatrixXf
+                 ]
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(1253): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(315): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+                 H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(307) : while compiling class template member function 'float nanoflann::L2_Adaptor<T,DataSource>::operator ()(const T *,const size_t,size_t,float) const'
+                 with
+                 [
+                     T=float,
+                     DataSource=nanoflann::KDTreeEigenMatrixAdaptor<Eigen::MatrixXf>
+                 ]
+                 H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(614) : see reference to class template instantiation 'nanoflann::L2_Adaptor<T,DataSource>' being compiled
+                 with
+                 [
+                     T=float,
+                     DataSource=nanoflann::KDTreeEigenMatrixAdaptor<Eigen::MatrixXf>
+                 ]
+                 kd_Tree.cpp(59) : see reference to class template instantiation 'nanoflann::KDTreeSingleIndexAdaptor<Distance,DatasetAdaptor,DIM,IndexType>' being compiled
+                 with
+                 [
+                     Distance=nanoflann::L2_Adaptor<float,nanoflann::KDTreeEigenMatrixAdaptor<Eigen::MatrixXf>>,
+                     DatasetAdaptor=nanoflann::KDTreeEigenMatrixAdaptor<Eigen::MatrixXf>,
+                     DIM=-1,
+                     IndexType=size_t
+                 ]
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(316): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(317): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(318): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>H:\Visual Studio 2010\nanoflann-1.1.6\include\nanoflann.hpp(327): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3720): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3776) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2> std::_Unguarded_partition<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Ty1=unsigned __int64 *,
+                     _Ty2=unsigned __int64 *,
+                     _RanIt=unsigned __int64 *,
+                     _Pr=std::greater<int>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3806) : see reference to function template instantiation 'void std::_Sort<unsigned __int64*,__int64,_Pr>(_RanIt,_RanIt,_Diff,_Pr)' being compiled
+                 with
+                 [
+                     _Pr=std::greater<int>,
+                     _RanIt=unsigned __int64 *,
+                     _Diff=__int64
+                 ]
+                 kd_Tree.cpp(74) : see reference to function template instantiation 'void std::sort<std::_Vector_iterator<_Myvec>,std::greater<_Ty>>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Myvec=std::_Vector_val<size_t,std::allocator<size_t>>,
+                     _Ty=int,
+                     _RanIt=std::_Vector_iterator<std::_Vector_val<size_t,std::allocator<size_t>>>,
+                     _Pr=std::greater<int>
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3720): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3724): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3724): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3735): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3735): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3742): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3742): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(674): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3719) : see reference to function template instantiation 'bool std::_Debug_lt_pred<_Pr,unsigned __int64,unsigned __int64>(_Pr,_Ty1 &,_Ty2 &,std::_Dbfile_t,std::_Dbline_t)' being compiled
+                 with
+                 [
+                     _Pr=std::greater<int>,
+                     _Ty1=unsigned __int64,
+                     _Ty2=unsigned __int64
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3776) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2> std::_Unguarded_partition<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Ty1=unsigned __int64 *,
+                     _Ty2=unsigned __int64 *,
+                     _RanIt=unsigned __int64 *,
+                     _Pr=std::greater<int>
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(674): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(676): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(676): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(674): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3719) : see reference to function template instantiation 'bool std::_Debug_lt_pred<_Pr,float,float>(_Pr,_Ty1 &,_Ty2 &,std::_Dbfile_t,std::_Dbline_t)' being compiled
+                 with
+                 [
+                     _Pr=std::greater<int>,
+                     _Ty1=float,
+                     _Ty2=float
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3776) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2> std::_Unguarded_partition<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Ty1=float *,
+                     _Ty2=float *,
+                     _RanIt=float *,
+                     _Pr=std::greater<int>
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\algorithm(3806) : see reference to function template instantiation 'void std::_Sort<float*,__int64,_Pr>(_RanIt,_RanIt,_Diff,_Pr)' being compiled
+                 with
+                 [
+                     _Pr=std::greater<int>,
+                     _RanIt=float *,
+                     _Diff=__int64
+                 ]
+                 kd_Tree.cpp(75) : see reference to function template instantiation 'void std::sort<std::_Vector_iterator<_Myvec>,std::greater<_Ty>>(_RanIt,_RanIt,_Pr)' being compiled
+                 with
+                 [
+                     _Myvec=std::_Vector_val<float,std::allocator<float>>,
+                     _Ty=int,
+                     _RanIt=std::_Vector_iterator<std::_Vector_val<float,std::allocator<float>>>,
+                     _Pr=std::greater<int>
+                 ]
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(674): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(676): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(676): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
+         Voting_Algorithm.cpp
+     1>Voting_Algorithm.cpp(35): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         User_Profiling.cpp
+         Text_Reading.cpp
+         Qualify.cpp
+         Matlab_execution.cpp
+     1>Matlab_execution.cpp(23): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Matlab_execution.cpp(54): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Mapping.cpp
+         Initialization.cpp
+         File_Processing.cpp
+         Data_Integration.cpp
+         Generating Code...
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Visual Studio 2010\Projects\FYP_Draft_No_7\x64\Debug\FYP_Third_Draft.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\matlab\R2012a\extern\lib\win64\microsoft C:\matlab\R2012a\extern\lib\win64\microsoft\libeng.lib C:\matlab\R2012a\extern\lib\win64\microsoft\libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\FYP_Third_Draft.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Visual Studio 2010\Projects\FYP_Draft_No_7\x64\Debug\FYP_Third_Draft.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Visual Studio 2010\Projects\FYP_Draft_No_7\x64\Debug\FYP_Third_Draft.lib" /MACHINE:X64 x64\Debug\FYP_Third_Draft.res
+         x64\Debug\FYP_Third_Draft.exe.embed.manifest.res
+         x64\Debug\kd_Tree.obj
+         x64\Debug\Mapping.obj
+         x64\Debug\Class_Sorting.obj
+         x64\Debug\Initialization.obj
+         x64\Debug\Qualify.obj
+         x64\Debug\Text_Reading.obj
+         x64\Debug\Linked_List.obj
+         x64\Debug\Data_Integration.obj
+         x64\Debug\main.obj
+         x64\Debug\Matlab_execution.obj
+         x64\Debug\File_Processing.obj
+         x64\Debug\User_Profiling.obj
+         x64\Debug\Voting_Algorithm.obj
+         FYP_Third_Draft.vcxproj -> H:\Visual Studio 2010\Projects\FYP_Draft_No_7\x64\Debug\FYP_Third_Draft.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\FYP_Third_Draft.exe.embed.manifest" /manifest x64\Debug\FYP_Third_Draft.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         FYP_Third_Draft.vcxproj -> H:\Visual Studio 2010\Projects\FYP_Draft_No_7\x64\Debug\FYP_Third_Draft.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\FYP_Third_Draft.unsuccessfulbuild".
+         Touching "x64\Debug\FYP_Third_Draft.lastbuildstate".
+     1>Done Building Project "H:\Visual Studio 2010\Projects\FYP_Draft_No_7\FYP_Third_Draft\FYP_Third_Draft.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:03.21

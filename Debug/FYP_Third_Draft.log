@@ -1,0 +1,52 @@
+﻿Build started 23/05/2013 12:11:34.
+     1>Project "H:\Visual Studio 2010\Projects\FYP_Third_Draft\FYP_Third_Draft\FYP_Third_Draft.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\FYP_Third_Draft.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\FYP_Third_Draft.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\matlab\R2012a\extern\include /I"H:\Visual Studio 2010\eigen" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Calc_Features.cpp "Calc_Metrics_(Mapping).cpp" Class_Sorting.cpp Initialization.cpp Helper_Functions.cpp Linked_List.cpp Load_History.cpp main.cpp Predict_Rating.cpp Process_File.cpp User_Profiling.cpp Process_Test.cpp
+         Process_Test.cpp
+         User_Profiling.cpp
+         Process_File.cpp
+         Predict_Rating.cpp
+         main.cpp
+         Load_History.cpp
+         Linked_List.cpp
+         Helper_Functions.cpp
+         Initialization.cpp
+         Class_Sorting.cpp
+         Calc_Metrics_(Mapping).cpp
+         Calc_Features.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\FYP_Third_Draft.res" FYP_Third_Draft.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\FYP_Third_Draft.exe.embed.manifest.res" Debug\FYP_Third_Draft_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Visual Studio 2010\Projects\FYP_Third_Draft\Debug\FYP_Third_Draft.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\matlab\R2012a\extern\lib\win64\microsoft C:\matlab\R2012a\extern\lib\win64\microsoft\libeng.lib C:\matlab\R2012a\extern\lib\win64\microsoft\libmx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\FYP_Third_Draft.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Visual Studio 2010\Projects\FYP_Third_Draft\Debug\FYP_Third_Draft.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Visual Studio 2010\Projects\FYP_Third_Draft\Debug\FYP_Third_Draft.lib" /MACHINE:X86 Debug\FYP_Third_Draft.res
+         Debug\FYP_Third_Draft.exe.embed.manifest.res
+         Debug\Calc_Features.obj
+         "Debug\Calc_Metrics_(Mapping).obj"
+         Debug\Class_Sorting.obj
+         Debug\Initialization.obj
+         Debug\Helper_Functions.obj
+         Debug\Linked_List.obj
+         Debug\Load_History.obj
+         Debug\main.obj
+         Debug\Predict_Rating.obj
+         Debug\Process_File.obj
+         Debug\User_Profiling.obj
+         Debug\Process_Test.obj
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _mxDestroyArray referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _engEvalString referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _engPutVariable referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _mxGetPr referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _mxCreateDoubleMatrix_730 referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>Class_Sorting.obj : error LNK2019: unresolved external symbol _engOpen referenced in function "public: void __thiscall Project_Engine::Class_Sorting(class Eigen::Matrix<float,-1,-1,0,-1,-1>)" (?Class_Sorting@Project_Engine@@QAEXV?$Matrix@M$0?0$0?0$0A@$0?0$0?0@Eigen@@@Z)
+     1>H:\Visual Studio 2010\Projects\FYP_Third_Draft\Debug\FYP_Third_Draft.exe : fatal error LNK1120: 6 unresolved externals
+     1>Done Building Project "H:\Visual Studio 2010\Projects\FYP_Third_Draft\FYP_Third_Draft\FYP_Third_Draft.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:01:23.82
